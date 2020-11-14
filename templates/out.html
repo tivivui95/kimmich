@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<style>
+  body {
+  font-family: "Roboto";
+  background-image: url('background3.png');
+  padding-top: 60px;
+
+}
+p {
+  font-size: 20px;
+}
+
+.button {
+  margin: auto;
+  text-align: center;
+  padding: 16px 32px;
+  font-size: 16px;
+  background-color: #FFCCCC;
+  border-radius: 40px;
+  border-style: none;
+  font-weight: bold;
+}
+.grid-container {
+  display: grid;
+  grid-area: myArea;
+  grid-template-areas: 'myArea myArea';
+  grid-gap: 40px;
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+.contain {
+  max-width: 900px; margin: auto;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  box-shadow: 1px 1px 15px 3px grey;
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 800px) {
+.grid-container {
+  display: grid;
+  grid-area: myArea;
+  grid-template-areas: 'myArea';
+  grid-gap: 40px;
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  box-shadow: 1px 1px 15px 3px grey;
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+}
+.contain {
+  max-width: 500px; margin: auto;
+}
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 800px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+.backimg {
+  width: 100%;
+  height: 600px;
+  background-image: url('vanmieu.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: normal;
+  opacity: 100%;
+}
+
+.h2 {
+  text-align: center;
+  text-transform: bold;
+  color: #FF3333;
+  text-shadow: 5px 5px 20px 10px grey;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  padding-top: 30px;
+  font-weight: bold;
+}
+</style>
+  <head>
+    <title>Temple Of Literature</title>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <input type="text" placeholder="Search..">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="backimg">
+    </div>
+    <h2 class="h2">TEMPLE OF LITERATURE</h2>
+<div class="contain">
+  <div class="grid-container">
+  <div class="item1">
+    <h4>History</h4>
+    <p>Temple Of Literature: The Temple of Literature is often cited as one of Hanoi’s most picturesque tourist attractions. Originally built as a university in 1070 dedicated to Confucius, scholars and sages, the building is extremely well preserved and is a superb example of traditional-style Vietnamese architecture.</p>
+    <input type="submit" name="history" value="Find more" class="button">
+  </div>
+  <div class="item2">
+    <h4>Map</h4>
+    <p>Temple Of Literature: The Temple of Literature is often cited as one of Hanoi’s most picturesque tourist attractions. Originally built as a university in 1070 dedicated to Confucius, scholars and sages, the building is extremely well preserved and is a superb example of traditional-style Vietnamese architecture.</p>
+    <input type="submit" name="history" value="Find more" class="button">
+  </div>
+  <div class="item3" =>
+    <h4>Food nearby</h4>
+    <p>Temple Of Literature: The Temple of Literature is often cited as one of Hanoi’s most picturesque tourist attractions. Originally built as a university in 1070 dedicated to Confucius, scholars and sages, the building is extremely well preserved and is a superb example of traditional-style Vietnamese architecture.</p>
+    <input type="submit" name="history" value="Find more" class="button" onclick ="func()">
+  <script>
+    function func() {
+      location.href= "https://www.google.com/maps/place/Temple+Of+Literature/@21.0293646,105.8339746,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab9926e7bd67:0x580e078874d5df1e!8m2!3d21.0293646!4d105.8361633";
+      var x = location.href;
+      document.getElementById("demo").innerHTML = "x";
+}
+</script>
+  </div>
+  <div class="item4">
+    <h4>Rules</h4>
+    <p>Temple Of Literature: The Temple of Literature is often cited as one of Hanoi’s most picturesque tourist attractions. Originally built as a university in 1070 dedicated to Confucius, scholars and sages, the building is extremely well preserved and is a superb example of traditional-style Vietnamese architecture.</p>
+    <input type="submit" name="history" value="Find more" class="button" >
+  </div>
+  </div>
+  </div>  
+  
+</div>
+</div>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

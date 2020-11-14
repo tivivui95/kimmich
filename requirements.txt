@@ -1,0 +1,11 @@
+flask
+opencv-python
+google-cloud-vision
+dominate
+jsonify
+werkzeug
+global
+gmplot
+urllib3
+regex
+google-auth-oauthlib
