@@ -56,6 +56,11 @@ To test whether the setup was successful, run the following command to use progr
 ```
 python main.py
 ```
+
+## Report
+
+* thuyettrinh-mindx.pdf (https://github.com/tivivui95/kimmich/blob/master/thuyentrinh-mindx.pdf)
+
 ## Homepage
 
 * kimmich.tk (https://kimmich.tk/)
